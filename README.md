@@ -2,7 +2,7 @@
 
 This is a sample Jupyter Notebook for visualization of Snowflake geospatial data with Folium, written for https://zenn.dev/articles/b505bc77b11957/ (Japanese article).
 
-To use this notebook, you have to populate a sample table on Snowflake as below:
+To use this notebook, you have to populate a sample table on Snowflake as the article, or the steps below:
 
 ## 1. Download the sample dataset
 
@@ -41,13 +41,13 @@ file_format = (type = json);
 
 `PUT` is not supported in Snowflake Web UI, so you have to use SnowSQL or other clients using a connetor.
 
-```
+```sql
 put file:///path/to/shinjuku-roads.geojson @stage_shinjuku_roads
 ```
 
 After uploaded, you can load the GeoJSON file to the table:
 
-```
+```sql
 copy into shinjuku_roads
 from (select
   $1:properties:SAFIELD000 id,
