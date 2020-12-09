@@ -1,6 +1,6 @@
 # sample-notebook-snowflake-folium
 
-This is a sample Jupyter Notebook for visualization of Snowflake geospatial data with Folium, written for https://zenn.dev/articles/b505bc77b11957/ (Japanese article).
+This is a sample Jupyter Notebook for visualization of Snowflake geospatial data with Folium, written for https://zenn.dev/indigo13love/articles/b505bc77b11957 (Japanese article).
 
 To use this notebook, you have to populate a sample table on Snowflake as the article, or the steps below:
 
